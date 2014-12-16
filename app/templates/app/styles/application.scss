@@ -1,0 +1,15 @@
+// Vendor imports
+@import "normalize-scss/normalize";
+@import "bower-bourbon/bourbon";
+
+// Global vars
+@import "variables";
+
+// Grid settings (change the order of the grid imports might break the visual grid)
+@import "neat/app/assets/stylesheets/neat-helpers";
+@import "grid-settings";
+@import "neat/app/assets/stylesheets/neat";
+
+// SMACCS-like styling
+@import "base";
+@import "modules";

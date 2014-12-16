@@ -1,0 +1,21 @@
+{
+	"name": "<%= _.slugify(appName) %>",
+	"version": "0.1.0",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bower-bourbon": "~3.1.8",
+		"neat": "~1.7.0",
+	  "normalize-scss": "~3.0.2",
+		"almond": "~0.3.0",
+		"jquery": "~1.11.1",
+		"js-signals": "~1.0.0",
+	  "greensock": "~1.15.0",
+	  "fastclick": "~1.0.3"
+	}
+}

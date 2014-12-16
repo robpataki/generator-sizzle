@@ -1,0 +1,10 @@
+body, html {
+	width: 100%;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	background-color: $colour-site-background;
+}
+
+* {
+	position: relative;
+	box-sizing: border-box;
+}
