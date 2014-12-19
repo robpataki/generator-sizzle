@@ -56,10 +56,6 @@ Using this generator will give you a quickly bootstrapped web app. I wrote this 
 
 	$ bundle install
 
-## Demo
-
-	(http://lab.robertpataki.com/generator-sizzle)[http://lab.robertpataki.com/generator-sizzle]
-
 ## Usage
 
 Install `generator-sizzle`:
