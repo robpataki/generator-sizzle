@@ -75,7 +75,12 @@ yo sizzle [app-name]
 
 Run `grunt` for building and `grunt serve` for preview
 
+## To do
 
+- Add soft build Grunt task
+- Add some defaults to the secret.json file
+- Add optional sublime-project file support with sensible defaults
+- Add optional jsHint and Mocha support
 
 ## License
 
