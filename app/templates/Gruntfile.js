@@ -48,7 +48,7 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= config.app %>/styles/{,*/}{,*/}{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server']
       },
       livereload: {
         options: {
@@ -123,21 +123,6 @@ module.exports = function (grunt) {
         '<%= config.app %>/scripts/{,*/}*.js',
         '!<%= config.app %>/scripts/vendor/*',
       ]
-    },
-
-    // Add vendor prefixed styles
-    autoprefixer: {
-      options: {
-        browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
-          dest: '.tmp/styles/'
-        }]
-      }
     },
 
     // Automatically inject Bower components into the HTML file
@@ -419,7 +404,6 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'requirejs:dev',
-      'autoprefixer',
       'connect:livereload',
       'watch'
     ]);
@@ -436,7 +420,6 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'requirejs:dist',
-    'autoprefixer',
     'copy:dist',
     'cssmin',
     'rev',
