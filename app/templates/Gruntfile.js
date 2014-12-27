@@ -142,7 +142,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*'
+            '<%= config.dist %>/fonts/{,*/}*.*'
           ]
         }
       }
@@ -164,11 +164,14 @@ module.exports = function (grunt) {
         relativeAssets: false,
         assetCacheBuster: false,
         raw: 'Sass::Script::Number.precision = 10\n',
-        bundleExec: true
+        bundleExec: true,
+        environment: 'development'
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= config.dist %>/images/generated'
+          generatedImagesDir: '<%= config.dist %>/images/generated',
+          cssDir: '<%= config.dist %>/styles',
+          environment: 'production'
         }
       },
       server: {
@@ -231,14 +234,6 @@ module.exports = function (grunt) {
           src: '{,*/}*.svg',
           dest: '<%= config.dist %>/images'
         }]
-      }
-    },
-
-    cssmin: {
-      dist: {
-        files: {
-          '<%= config.dist %>/styles/application.css': '.tmp/styles/application.css'
-        }
       }
     },
 
@@ -313,7 +308,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*',
+            'fonts/{,*/}*.*',
             'videos/{,*/}*.*',
             'resources/{,*/}*.*',
             '!images/svg'
@@ -421,7 +416,6 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'requirejs:dist',
     'copy:dist',
-    'cssmin',
     'rev',
     'usemin',
     'htmlmin'

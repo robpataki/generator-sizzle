@@ -22,6 +22,7 @@
 	}
 
 	.banner_title {
+		@extend .font-headline;
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 90%;

@@ -86,10 +86,14 @@ var SizzleGenerator = yeoman.generators.Base.extend({
       this.template('app/styles/_modules.scss', 'app/styles/_modules.scss');
       this.template('app/styles/_grid-settings.scss', 'app/styles/_grid-settings.scss');
       this.template('app/styles/_base.scss', 'app/styles/_base.scss');
+      this.template('app/styles/_fonts.scss', 'app/styles/_fonts.scss');
 
       // Copy over the image files
       this.copy('app/favicon.ico', 'app/favicon.ico');
       this.copy('app/images/yeoman-sizzle.png', 'app/images/yeoman-sizzle.png');
+
+      // Fonts
+      this.bulkDirectory('app/fonts', 'app/fonts');
     },
 
   },

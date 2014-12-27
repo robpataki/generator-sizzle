@@ -1,0 +1,10 @@
+@include font-face("Fanwood", "../fonts/fanwood-webfont", normal);
+
+.font-headline {
+  font-family: "Fanwood", Georgia, Times, serif;
+}
+
+.font-body {
+  font-family: "Helvetica Medium", Arial, Verdana, sans;
+  font-weight: 300;
+}

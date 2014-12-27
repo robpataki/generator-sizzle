@@ -1,6 +1,6 @@
 body, html {
 	width: 100%;
-	font-family: Helvetica, Arial, Verdana, sans-serif;
+	@extend .font-body;
 	background-color: $colour-site-background;
 }
 
