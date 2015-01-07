@@ -17,7 +17,6 @@ module.exports = function (grunt) {
     // Changelog generator
     changelog: {
       options: {
-        from: '8a791f393193f63ecf8aca07ed7cdd4f6bbeab71',
         dest: 'CHANGELOG.md',
         versionFile: 'package.json'
       }

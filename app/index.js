@@ -20,11 +20,18 @@ var SizzleGenerator = yeoman.generators.Base.extend({
     var prompts = [{
       name: 'appName',
       message: 'Would you mind telling me your project base name?',
-      default: 'my-project'
+      default: this.appname
+    }, {
+      name: 'sublimeProjectFile',
+      message: 'Would you like me to create a Project File for Sublime?',
+      type: 'confirm',
+      default: true
     }];
 
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
+
+      this.sublimeProjectFile = props.sublimeProjectFile;
 
       done();
     }.bind(this));
@@ -38,6 +45,11 @@ var SizzleGenerator = yeoman.generators.Base.extend({
       this.template('editorconfig', '.editorconfig');
       this.template('_bower.json', 'bower.json');
       this.template('_secret.json', 'secret.json');
+
+      // Optional goodies
+      if(this.sublimeProjectFile) {
+        this.template('_subl.sublime-project', this.appName.toLowerCase().split(' ').join('-') + '.sublime-project');
+      }
     },
 
     gitfiles: function() {

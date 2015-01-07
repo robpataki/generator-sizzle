@@ -1,3 +1,12 @@
+<a name="0.1.5"></a>
+### 0.1.5 (2015-01-07)
+
+
+#### Features
+
+* **sublime:** Add optional Sublime Project File ([08015105](robertpataki/generator-sizzle/commit/080151056adfa0e22417d15c418394ba5184cd67))
+
+
 <a name="0.1.4"></a>
 ### 0.1.4 (2015-01-07)
 
