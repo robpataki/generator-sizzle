@@ -75,6 +75,7 @@ var SizzleGenerator = yeoman.generators.Base.extend({
       // Misc
       this.template('app/index.html', 'app/index.html');
       this.template('app/robots.txt', 'app/robots.txt');
+      this.copy('app/.htaccess', 'app/.htaccess');
 
       // JavaScript
       this.template('app/scripts/main.js', 'app/scripts/main.js');

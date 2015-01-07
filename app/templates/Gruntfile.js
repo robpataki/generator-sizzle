@@ -314,8 +314,8 @@ module.exports = function (grunt) {
             '!images/svg'
           ]
         }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
+          src: '<%= config.app %>/.htaccess',
+          dest: '<%= config.dist %>/htaccess'
         }]
       },
       styles: {
@@ -370,6 +370,27 @@ module.exports = function (grunt) {
           "./": "<%= config.dist %>/**"
         }
       }
+    },
+
+    sshexec: {
+      staging: {
+        command: 'mv <%= secret.staging.path %>/htaccess <%= secret.staging.path %>/.htaccess',
+        options: {
+          host: '<%= secret.staging.host %>',
+          path: '<%= secret.staging.path %>',
+          username: '<%= secret.staging.username %>',
+          password: '<%= secret.staging.password %>'
+        }
+      },
+      prod: {
+        command: 'mv <%= secret.prod.path %>/htaccess <%= secret.prod.path %>/.htaccess',
+        options: {
+          host: '<%= secret.prod.host %>',
+          path: '<%= secret.prod.path %>',
+          username: '<%= secret.prod.username %>',
+          password: '<%= secret.prod.password %>'
+        }
+      },
     },
 
     open : {
@@ -429,11 +450,13 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy:staging', [
     'build',
     'sftp:staging',
+    'sshexec:staging',
     'open:staging'
   ]);
   grunt.registerTask('deploy:prod', [
     'build',
     'sftp:prod',
+    'sshexec:prod',
     'open:prod'
   ]);
 };
