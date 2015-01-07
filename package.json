@@ -1,6 +1,6 @@
 {
 	"name": "generator-sizzle",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Yeoman generator for creating single page webapps using Compass with Bourbon and Normalize, r.js optimiser and almond, jQuery, FastClick, jsSignals and the Greensock tweening engine.",
 	"license": "BSD",
 	"keywords": [
@@ -30,6 +30,11 @@
 	"files": [
 		"app"
 	],
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-conventional-changelog": "~1.1.0",
+		"load-grunt-tasks": "~0.3.0"
+	},
 	"dependencies": {
 		"yeoman-generator": "^0.18.4",
 		"chalk": "^0.5.0",
