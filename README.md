@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# generator-sizzle [![Build Status](https://travis-ci.org/robertpataki/generator-sizzle.svg?branch=master)](https://travis-ci.org/robertpataki/generator-sizzle)
+# generator-sizzle [![Build Status](https://travis-ci.org/robertpataki/generator-sizzle.svg?branch=master)](https://travis-ci.org/robertpataki/generator-sizzle) [![npm version](https://badge.fury.io/js/generator-sizzle.svg)](http://badge.fury.io/js/generator-sizzle)
 
 > Sizzle generator for quickly bootstrapping web apps using AMD modules and SMACSS like styling usinc Compass and Bourbon.
 
