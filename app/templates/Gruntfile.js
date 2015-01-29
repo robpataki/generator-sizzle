@@ -33,14 +33,14 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/scripts/{,*/}{,*/}{,*/}*.*'],
         tasks: ['requirejs:dev'],
         options: {
-          livereload: true
+          livereload: '<%= connect.options.livereload %>'
         }
       },
       json: {
         files: ['<%= config.app %>/resources/{,*/}{,*/}{,*/}*.*'],
         tasks: ['requirejs:dev'],
         options: {
-          livereload: true
+          livereload: '<%= connect.options.livereload %>'
         }
       },
       gruntfile: {

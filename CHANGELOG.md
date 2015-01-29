@@ -1,3 +1,17 @@
+<a name="0.1.6"></a>
+### 0.1.6 (2015-01-29)
+
+
+#### Bug Fixes
+
+* **Livereload:** Use livereload options wherever the task is used ([8ef156f3](robertpataki/generator-sizzle/commit/8ef156f3ab4ceddd6020de4f37ffca41d66cb8ae))
+
+
+#### Features
+
+* **docs:** Add NPM package version badge to the README file ([a30fc71e](robertpataki/generator-sizzle/commit/a30fc71e3f50abb1556af9ba70a3b2d1c79eda09))
+
+
 <a name="0.1.5"></a>
 ### 0.1.5 (2015-01-07)
 
