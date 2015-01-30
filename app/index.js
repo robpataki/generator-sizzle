@@ -105,6 +105,7 @@ var SizzleGenerator = yeoman.generators.Base.extend({
 
       // Copy over the image files
       this.copy('app/favicon.ico', 'app/favicon.ico');
+      this.copy('app/apple-touch-icon.png', 'app/apple-touch-icon.png');
       this.copy('app/images/yeoman-sizzle.png', 'app/images/yeoman-sizzle.png');
 
       // Fonts
