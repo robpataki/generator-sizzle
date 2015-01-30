@@ -37,12 +37,13 @@ Using this generator will give you a quickly bootstrapped web app. I wrote this 
 ## Bower components
 
 - jQuery
+- Underscore.js
 - Greensock
 - FastClick
-- Normalize
 - Almond (a working substitute of requirejs with Yeoman)
 - JS Signals
 - Bourbon + Bourbon Neat
+- Normalize.scss
 
 ## NPM modules (other than the usual stuff)
 - Compass
