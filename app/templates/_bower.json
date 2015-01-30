@@ -9,7 +9,7 @@
 		"tests"
 	],
 	"dependencies": {
-		"bower-bourbon": "~3.1.8",
+		"bourbon": "~4.1.1",
 		"neat": "~1.7.0",
 	  "normalize-scss": "~3.0.2",
 		"almond": "~0.3.0",
