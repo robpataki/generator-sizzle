@@ -73,6 +73,7 @@ var SizzleGenerator = yeoman.generators.Base.extend({
       this.dest.mkdir('app');
       // Styles
       this.dest.mkdir('app/styles');
+      this.dest.mkdir('app/styles/modules');
       // Images
       this.dest.mkdir('app/images');
       this.dest.mkdir('app/images/inline');
@@ -100,6 +101,7 @@ var SizzleGenerator = yeoman.generators.Base.extend({
       this.template('app/styles/_grid-settings.scss', 'app/styles/_grid-settings.scss');
       this.template('app/styles/_base.scss', 'app/styles/_base.scss');
       this.template('app/styles/_fonts.scss', 'app/styles/_fonts.scss');
+      this.template('app/styles/modules/_banner.scss', 'app/styles/modules/_banner.scss');
 
       // Copy over the image files
       this.copy('app/favicon.ico', 'app/favicon.ico');

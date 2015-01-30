@@ -1,10 +1,24 @@
 body, html {
-	width: 100%;
-	@extend .font-body;
-	background-color: $colour-site-background;
+  width: 100%;
+  @extend .font-body;
+  background-color: $colour-site-background;
+  color: $colour-copy;
 }
 
 * {
-	position: relative;
-	box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
+}
+
+a {
+  color: $colour-text-highlighted;
+  text-decoration: none;
+
+  @include transition-property(color);
+  @include transition-duration(0.4s);
+  @include animation-timing-function($ease-out-expo);
+
+  &:hover {
+    color: $colour-link-active;
+  }
 }
