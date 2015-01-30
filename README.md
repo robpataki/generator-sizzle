@@ -26,6 +26,7 @@ Using this generator will give you a quickly bootstrapped web app. I wrote this 
 - Cache busting of image files including your JavaScript and JSON files
 - 1 CSS file in the <head> and 1 JavaScript file before the </body>, no unnecessary HTTP requests
 - Keep your JavaScript code modular with AMD modules via RequireJS
+- Use brill JavaScript utilities thanks to Underscore.js
 
 ## Caveats
 
@@ -76,11 +77,13 @@ yo sizzle [app-name]
 
 Run `grunt` for building and `grunt serve` for preview
 
+## Changelog
+
+All changes are logged in the [CHANGELOG.md](https://github.com/robertpataki/generator-sizzle/blob/master/CHANGELOG.md) file.
+
 ## To do
 
 - Add soft build Grunt task
-- Add some defaults to the secret.json file
-- Add optional sublime-project file support with sensible defaults
 - Add optional jsHint and Mocha support
 
 ## License

@@ -1,3 +1,17 @@
+<a name="0.1.7"></a>
+### 0.1.7 (2015-01-30)
+
+
+#### Features
+
+* **Bourbon:** Use `bourbon` instead of `bower-bourbon` ([63052ae8](robertpataki/generator-sizzle/commit/63052ae855fa29bee78404cd8a758cbe20fa237c))
+* **Dependencies:** Add list of installed dependencies to index.html ([52939f1e](robertpataki/generator-sizzle/commit/52939f1e44c7818e000d17851f116c5603301252))
+* **Icons:** Add default apple touch icon ([6692d798](robertpataki/generator-sizzle/commit/6692d798c4d7e1fd4d96e3f65d8467267511adcb))
+* **Sublime:** Add Sublime project file ([450d5be1](robertpataki/generator-sizzle/commit/450d5be108332b7ae9090406acebc61c0258b0c1))
+* **Underscore:** Add Underscore support ([d883727c](robertpataki/generator-sizzle/commit/d883727cc30542480912622a026254bae2349d90))
+* **Woff2:** Add woff2 version of webfonts ([f7790e9f](robertpataki/generator-sizzle/commit/f7790e9f9b98066a76f7bfccf2f7867ea3e65d6d))
+
+
 <a name="0.1.6"></a>
 ### 0.1.6 (2015-01-29)
 
