@@ -1,17 +1,18 @@
 .wrapper {
-	@include outer-container;
+  @include outer-container;
+  margin-bottom: em(40);
 }
 
 .contents {
-	padding: em(20) em(40) 0 em(40);
+  padding: em(20) em(40) 0 em(40);
 }
 
 .list-inline {
-	display: inline-block;
-	list-style: none;
-	padding-left: 0;
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
 
-	li {
-		display: inline;
-	}
+  li {
+    display: inline;
+  }
 }

@@ -11,11 +11,13 @@
   @include media($tablet) {
     @include span-columns(5);
     @include shift(1.5);
+    font-size: 90%;
   }
 
   @include media($mobile) {
-    @include span-columns(3);
-    @include shift(0.5);
+    @include span-columns(4);
+    @include shift(0);
+    font-size: 80%;
   }
 
   .banner_title {
